@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Employees</title>
+</head>
+<body>
+
+Firstname:<h3 th:text="${emp.firstName}"></h3>
+Lastname:<h3 th:text="${emp.lastName}"></h3>
+Salary:<h3 th:text="${emp.salary}"></h3>
+
+<!--Concatenation--> <!--//$ isareti ===>metin, cumle vs yapmak icin-->
+<h4 th:text="${'Hello' + emp.firstName}"></h4>
+
+<!--Links--> <!--@ isareti===> baska bir site veya sayfaya yonlendirmek icin-->
+<a th:href="@{https://cydeo.com}">Home Page</a>
+
+<br>
+
+<a th:href="@{/employees}">Employees List</a>
+
+<br>
+
+<a th:href="@{/employees(name=Mike)}">Add Query 1</a> <!--//(name=Mike): Bu, bir sorgu parametresini belirtir. URL'ye name=Mike olarak eklenir. Yani, oluşturulan bağlantı şuna benzer: /employees?name=Mike. -->
+<!--/employee?name=Mike -->
+<br>
+
+<a th:href="@{/employees(name=${emp.firstName})}">Add Query 2</a>
+<!--/employee?name=Mike -->
+
+<!--Conditional Logic-->
+
+
+
+
+
+</body>
+</html>
