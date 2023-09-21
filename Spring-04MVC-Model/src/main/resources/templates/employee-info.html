@@ -16,7 +16,7 @@ Salary:<h3 th:text="${emp.salary}"></h3>
 <!--Links--> <!--@ isareti===> baska bir site veya sayfaya yonlendirmek icin-->
 <a th:href="@{https://cydeo.com}">Home Page</a>
 
-<br>
+<br>  <!-- sonraki yazilani alt satira gecirir -->
 
 <a th:href="@{/employees}">Employees List</a>
 
@@ -31,6 +31,14 @@ Salary:<h3 th:text="${emp.salary}"></h3>
 <!--/employee?name=Mike -->
 
 <!--Conditional Logic-->
+
+
+<div th:text="${emp.salary > 100000 ? 'Cool' : 'OK'}"></div> <!--salary 90000 de kucukse Cool' buyukse OK-->
+
+<div>
+  <span th:if="${emp.firstName == 'Joe'}">Hi Joe!</span>
+  <span th:unless="${emp.firstName == 'Joe'}"> Hi Employee!</span>
+</div>
 
 
 
