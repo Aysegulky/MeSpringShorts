@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Employees</title>
+</head>
+
+
+
+<body>
+    <h3 class="display-4 text-center my-4">Customer Registration</h3>
+
+<div class="cantainer">
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <label>First Name</label>
+        <input type="text" class="form-controller">
+      </div>
+      <div class="col">
+        <label>Last Name</label>
+        <input type="text" class="form-control">
+
+        </div>
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col">
+        <label>Adress 1</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col">
+        <label>Address 2</label>
+        <input type="text" class="form-cotrol">
+      </div>
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col">
+        <label for="state">State</label>
+        <select class="form-control" id="State" >
+          <option>Alaska</option>
+        </select>
+      </div>
+      <div class="col">
+        <label>Zip Code</label>
+        <input type="text" class="form-cotrol">
+      </div>
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col">
+        <label>City</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col">
+        <label>Email Address</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col">
+        <h5> Membership Type</h5>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" value="STANDARD" name="member" id="standard">
+          <label class="form-check-label" for="standard">
+            Standard
+          </label>
+          <br>
+          <input class="form-check-input" type="radio" value="PREMIUM" name="member" id="premium">
+          <label class="form-check-label" for="Premium">
+            Premium
+          </label>
+          <br>
+          <input class="form-check-input" type="radio" value="ULTIMATE" name="member" id="Ultimate">
+          <label class="form-check-label" for="Ultimate">
+            Ultimate
+          </label>
+          </div>
+      </div>
+    </div>
+    <br>
+    <div class="=form-row">
+      <div class="col">
+        <h4>Tems and Conditions</h4>
+        <p>You consent to receive communications from us electronically. We will communicate with you by e-mail or phone. You agrements, notices, disclosures and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing. </p>
+      </div>
+    </div>
+    <div class="form-row">
+    <div class="col">
+      <div class="form-check">
+        <label class="form-check-label mr-2">
+          <input type="checkbox"  class="form-check-input"> I Agree to <b>Terms & Conditions</b>
+        </label>
+      </div>
+    </div>
+    </div>
+    <br>
+    <button class="btn btn-secondary" type="submit">Submit</button>
+
+  </form>
+</div>
+
+
+</body>
+</html>
