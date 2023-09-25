@@ -22,14 +22,6 @@ public class MainController {
         employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
         employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
         employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
-        employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
-        employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
-        employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
-        employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
-        employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
-        employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
-        employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
-        employeeList.add(new Employee(faker.name().firstName(),faker.name().lastName(),faker.number().numberBetween(50000,140000)));
 
         //model.addAttribute("name","MIKE");
         model.addAttribute("employees",employeeList);
