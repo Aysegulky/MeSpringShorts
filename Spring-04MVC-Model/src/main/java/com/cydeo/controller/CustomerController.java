@@ -4,10 +4,13 @@ package com.cydeo.controller;
 import com.cydeo.Model.Customer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.validation.Valid;
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,9 +31,15 @@ public class CustomerController {
 
     }
 
-    @PostMapping("/confirm")
-    public String confirm(@ModelAttribute("customer")Customer customer, Model model){
 
+    @PostMapping("/confirm")
+    public String confirm(@Valid @ModelAttribute("customer")Customer customer, BindingResult bindingResult, Model model){
+
+        if(bindingResult.hasErrors()){
+
+
+            return "customer/register";
+        }
         System.out.println(customer);
         model.addAttribute("customer", customer);
 
